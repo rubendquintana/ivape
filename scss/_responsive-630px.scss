@@ -1,0 +1,29 @@
+@media(max-width:630px) {
+    header{
+      height: 100%;
+    }
+    header img{
+      margin-left: 80%;
+      height: 100px;
+    }
+    .wpp{
+      width: 70px;
+      height: 70px;
+    }
+    nav ul {
+      margin-top: 14px;
+      font-size: 16px;
+      padding-right: 10px;
+    }
+    ul a:hover {
+      font-size: 17px;
+    }
+    .destacados {
+      display: grid;
+      grid-template-columns: 30vw 30vw;
+      grid-template-rows: 30vw 30vw;
+      justify-content: space-evenly;
+      row-gap: 15%;
+      height: 500px;
+    }
+  }

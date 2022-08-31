@@ -1,0 +1,55 @@
+.redes p{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    margin-top: 10%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: rgba(0,0,0,0.1);
+  }
+footer {
+    height: 22vw;
+    width: 100%;
+    padding-top: 5%;
+    grid-area: footer;
+    font-family: $fu-pri;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    display: grid;
+    grid-template-columns: 22vw 22vw 22vw 22vw;
+    grid-template-rows: 22vw;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    background-color: $col-fondo;
+  
+  
+        div img{
+        width: 80%;
+        height: 80%;
+        filter: contrast(82%);
+        text-align: center;
+    }
+
+  /* CAPA DE TRANSPARENCIA PARA FOOTER (GIFS CON FONDOS BLANCOS) */
+    .capa{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,0.1  );
+    }
+    div p{
+        position: absolute;
+        text-align: center;
+        color: $col-sec;
+    }
+    /* CORRECCION TAMAÑO TWITCH */
+    .twitch img{
+        width: 70%;
+        height: 70%;
+    }
+}

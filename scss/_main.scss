@@ -1,0 +1,57 @@
+main {
+    width: 100vw;
+    height: 100%;
+    background-color: $col-fondo;
+    grid-area: main;
+    position: relative;
+    
+    main p{
+        font-weight: bolder;
+        font-family: $fu-pri;
+        font-size: 20px;
+        text-align: center;
+        margin: 1%;
+      }
+
+    .textomain p{
+        font-size: 25px;
+        text-align: center;
+        font-family: $fu-pri;
+        font-weight: bold;
+        margin-top: 12%;
+        margin-bottom: 3%; 
+    }
+  /* ESTRUCTURA DE MARCAS */
+    .marcas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        gap: 5px;
+    }
+  /* TAMAÑO CAJAS DE MARCAS */
+    .marcas div {
+        width: 10%;
+        height: 100px;
+        transition: height 0.3s, width 0.3s;
+    }
+    .marcas div:hover {
+        height: 120px;
+        width: 12%;
+    }
+    /* TAMAÑO IMAGENES MARCAS */
+    .marcas img {
+        width: 100%;
+        height: 100%;
+    }
+    /* FUENTE DE MARCAS */
+    div a {
+        font-weight: bolder;
+        text-decoration: none;
+        color: $col-sec;
+        padding: 5px;
+        font-family: $fu-pri;
+    }
+    
+}

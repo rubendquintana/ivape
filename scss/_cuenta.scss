@@ -1,0 +1,58 @@
+.registro {
+    width: 400px;
+    background: $col-sec;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    border-radius: 4px;
+    font-family: $fu-pri;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    font-weight: bold;
+  
+    h4 {
+        font-size: 30px;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+
+    p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+      }
+      
+    a {
+        color: white;
+        text-decoration: none;
+      }
+      
+    a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+      
+    .botons {
+        width: 100%;
+        background: #e7f300;
+        border: none;
+        padding: 12px;
+        color: black;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+}
+
+.inputUno {
+    width: 100%;
+    background: #1d2528;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: $borde1;
+    font-family: $fu-sec;
+    font-size: 18px;
+    color: white;
+}

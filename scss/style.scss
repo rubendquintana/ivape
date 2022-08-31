@@ -4,3 +4,42 @@
   }
 @import "variables";
  
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+@import "header";
+
+@import "main";
+
+@import "quienes-somos";
+
+@import "mainsec1";
+
+@import "mainsec2";
+
+@import "mainpie";
+
+@import "footer";
+
+@import "cuenta";
+
+@import "responsive-900px";
+
+@import "responsive-630px";
+
+@import "responsive-557px";
+
+@import "responsive-492px";
+
+@import "responsive-365px";

@@ -1,0 +1,25 @@
+.destacados div {
+    width: 90%;
+    height: 90%;
+    border-left: $borde1;
+    border-top: $borde1;
+    border-radius: 7px;
+    box-shadow: $sombra;
+    align-items: center;
+  }
+div p {
+    font-family: $fu-pri;
+    font-family: $fu-sec;
+    font-size: 20px;
+    text-align: center;
+  }
+.destacados img {
+    width: 100%;
+    height: 100%;
+  }
+.destacados {
+    display: grid;
+    grid-template-columns: 22vw 22vw 22vw 22vw;
+    grid-template-rows: 22vw;
+    justify-content: space-evenly;
+  }

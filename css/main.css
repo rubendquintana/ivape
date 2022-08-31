@@ -1,3 +1,413 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
+
+body {
+  display: grid;
+  grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main" "footer footer footer footer";
+  position: relative;
+  width: 100vw;
+  height: 100%; }
+
+header img {
+  margin-top: 10px; }
+
+.wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  width: 80px;
+  height: 80px; }
+
+header {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  grid-area: header; }
+  header ul a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    font-family: "Encode Sans", sans-serif;
+    transition: height 0.4s, width 0.3s; }
+  header ul a:hover {
+    border-bottom: 3px black solid;
+    height: -20px;
+    font-size: 21px; }
+
+main {
+  width: 100vw;
+  height: 100%;
+  background-color: white;
+  grid-area: main;
+  position: relative;
+  /* ESTRUCTURA DE MARCAS */
+  /* TAMAÑO CAJAS DE MARCAS */
+  /* TAMAÑO IMAGENES MARCAS */
+  /* FUENTE DE MARCAS */ }
+  main main p {
+    font-weight: bolder;
+    font-family: "Encode Sans", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 1%; }
+  main .textomain p {
+    font-size: 25px;
+    text-align: center;
+    font-family: "Encode Sans", sans-serif;
+    font-weight: bold;
+    margin-top: 12%;
+    margin-bottom: 3%; }
+  main .marcas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    gap: 5px; }
+  main .marcas div {
+    width: 10%;
+    height: 100px;
+    transition: height 0.3s, width 0.3s; }
+  main .marcas div:hover {
+    height: 120px;
+    width: 12%; }
+  main .marcas img {
+    width: 100%;
+    height: 100%; }
+  main div a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-family: "Encode Sans", sans-serif; }
+
+h1 {
+  font-weight: bolder;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 30px;
+  padding: 1%;
+  padding-top: 5%;
+  text-align: center; }
+
+h2 {
+  font-weight: bolder;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3%; }
+
+.destacados div {
+  width: 90%;
+  height: 90%;
+  border-left: 1px grey solid;
+  border-top: 1px grey solid;
+  border-radius: 7px;
+  box-shadow: 9px 4px grey;
+  align-items: center; }
+
+div p {
+  font-family: "Encode Sans", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  text-align: center; }
+
+.destacados img {
+  width: 100%;
+  height: 100%; }
+
+.destacados {
+  display: grid;
+  grid-template-columns: 22vw 22vw 22vw 22vw;
+  grid-template-rows: 22vw;
+  justify-content: space-evenly; }
+
+.navmain {
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
+  grid-template-rows: 30vw;
+  justify-content: center;
+  margin-top: 18%;
+  gap: 5px; }
+
+.item img {
+  width: 99%;
+  height: 99%;
+  border: 1px black solid; }
+
+.pie-de-pag {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 22vw 22vw 22vw 22vw;
+  grid-template-rows: 22vw;
+  justify-content: space-around;
+  margin-top: 5%; }
+  .pie-de-pag .pie-de-pag figure {
+    width: 100vw;
+    height: 100vh;
+    align-items: stretch;
+    justify-items: center;
+    justify-self: stretch; }
+  .pie-de-pag figure img {
+    justify-self: stretch; }
+  .pie-de-pag .pie-de-pag figcaption {
+    text-align: center;
+    width: 100vw;
+    height: 100vh; }
+
+.redes p {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-top: 10%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+footer {
+  height: 22vw;
+  width: 100%;
+  padding-top: 5%;
+  grid-area: footer;
+  font-family: "Encode Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  display: grid;
+  grid-template-columns: 22vw 22vw 22vw 22vw;
+  grid-template-rows: 22vw;
+  justify-content: space-evenly;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  /* CAPA DE TRANSPARENCIA PARA FOOTER (GIFS CON FONDOS BLANCOS) */
+  /* CORRECCION TAMAÑO TWITCH */ }
+  footer div img {
+    width: 80%;
+    height: 80%;
+    filter: contrast(82%);
+    text-align: center; }
+  footer .capa {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1); }
+  footer div p {
+    position: absolute;
+    text-align: center;
+    color: black; }
+  footer .twitch img {
+    width: 70%;
+    height: 70%; }
+
+.registro {
+  width: 400px;
+  background: black;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  border-radius: 4px;
+  font-family: "Encode Sans", sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+  font-weight: bold; }
+  .registro h4 {
+    font-size: 30px;
+    margin-bottom: 17px;
+    text-align: center; }
+  .registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px; }
+  .registro a {
+    color: white;
+    text-decoration: none; }
+  .registro a:hover {
+    color: white;
+    text-decoration: underline; }
+  .registro .botons {
+    width: 100%;
+    background: #e7f300;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px; }
+
+.inputUno {
+  width: 100%;
+  background: #1d2528;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px grey solid;
+  font-family: "Mukta", sans-serif;
+  font-size: 18px;
+  color: white; }
+
+@media (max-width: 900px) {
+  body {
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "main main main" "main main main" "main main main" "main main main" "footer footer footer";
+    position: relative;
+    width: 100vw;
+    height: 100%; }
+  header {
+    height: 100%; }
+  nav ul {
+    margin-top: 50px;
+    font-size: 20px;
+    padding-right: 20px; }
+  ul a:hover {
+    font-size: 21px; }
+  .marcas {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    grid-template-rows: 20vw 20vw;
+    justify-content: center;
+    gap: 2px; }
+  .marcas .marca {
+    width: 100%;
+    height: 100%; }
+  .marca img {
+    width: 80%;
+    height: 60%;
+    transition: height 0.3s, width 0.3s;
+    text-align: center; }
+  .marcas div:hover {
+    height: 120%;
+    width: 110%; }
+  .navmain {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 25vw 25vw;
+    justify-content: center;
+    margin-top: 20%;
+    gap: 10px; }
+  .item img {
+    width: 99%;
+    height: 99%;
+    border: 1px black solid; } }
+
+@media (max-width: 630px) {
+  header {
+    height: 100%; }
+  header img {
+    margin-left: 80%;
+    height: 100px; }
+  .wpp {
+    width: 70px;
+    height: 70px; }
+  nav ul {
+    margin-top: 14px;
+    font-size: 16px;
+    padding-right: 10px; }
+  ul a:hover {
+    font-size: 17px; }
+  .destacados {
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 30vw 30vw;
+    justify-content: space-evenly;
+    row-gap: 15%;
+    height: 500px; } }
+
+@media (max-width: 557px) {
+  .marca a {
+    font-size: 1px;
+    color: white; }
+  nav ul {
+    margin-top: 20px;
+    font-size: 13px;
+    padding-right: 20px; }
+  ul a:hover {
+    font-size: 14px; }
+  .marcas {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 25vw 25vw 25vw;
+    justify-content: center;
+    gap: 8px; }
+  .diferente {
+    grid-column-start: 2; }
+  .pie-de-pag {
+    margin-top: 10%; }
+  .redes p {
+    margin-top: 25%; }
+  .textomain p {
+    font-size: 15px;
+    margin-top: 3%; }
+  .uno p {
+    margin-top: 15%; }
+  div p {
+    font-size: 15px;
+    text-align: center; }
+  .destacados {
+    width: 100%;
+    height: 400px; }
+  .navmain {
+    margin-top: 20%; } }
+
+@media (max-width: 492px) {
+  header img {
+    margin-left: 70%;
+    width: 100px; }
+  nav ul {
+    margin-top: 15px;
+    font-size: 12px;
+    padding-right: 20px; }
+  ul a:hover {
+    font-size: 14px; }
+  .marcas {
+    gap: 1px; }
+  .navmain {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 35vw 35vw 35vw;
+    margin-top: 35%; }
+  .destacados {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 40vw 40vw; }
+  .marcas {
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 30vw 30vw 30vw; }
+  .redes p {
+    font-size: 20px; }
+  .tres {
+    margin-top: 25%; }
+  .registro {
+    width: 300px; }
+  .registro p {
+    font-size: 12px; } }
+
+@media (max-width: 365px) {
+  nav {
+    visibility: visible; }
+  .tres {
+    margin-top: 0%; }
+  .navmain {
+    margin-top: 25%; }
+  header img {
+    margin-left: 0%; }
+  .redes {
+    margin-top: 130px; }
+  footer {
+    width: 100vw;
+    padding-right: 20%;
+    height: 100px; }
+  .wpp {
+    width: 60px;
+    height: 60px; }
+  .registro {
+    width: 250px; } }

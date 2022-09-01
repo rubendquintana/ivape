@@ -1,20 +1,14 @@
 .pie-de-pag{
     display: grid;
-    width: 100%;
+    // width: 100%;
     grid-template-columns: 22vw 22vw 22vw 22vw;
     grid-template-rows: 22vw;
     justify-content: space-around;
     margin-top: 5%;
   
-    .pie-de-pag figure {
-        width: 100vw;
-        height: 100vh;
-        align-items: stretch;
-        justify-items: center;
-        justify-self: stretch;
-    }
-    figure img{
-        justify-self: stretch;
+    figure img {
+        width: 99%;
+        height: 99%;
     }
     .pie-de-pag figcaption{
         text-align: center;

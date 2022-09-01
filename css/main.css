@@ -8,7 +8,7 @@ body {
   grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main" "footer footer footer footer";
   position: relative;
   width: 100vw;
-  height: 100%; }
+  height: 100vh; }
 
 header img {
   margin-top: 10px; }
@@ -140,26 +140,20 @@ div p {
 
 .pie-de-pag {
   display: grid;
-  width: 100%;
   grid-template-columns: 22vw 22vw 22vw 22vw;
   grid-template-rows: 22vw;
   justify-content: space-around;
   margin-top: 5%; }
-  .pie-de-pag .pie-de-pag figure {
-    width: 100vw;
-    height: 100vh;
-    align-items: stretch;
-    justify-items: center;
-    justify-self: stretch; }
   .pie-de-pag figure img {
-    justify-self: stretch; }
+    width: 99%;
+    height: 99%; }
   .pie-de-pag .pie-de-pag figcaption {
     text-align: center;
     width: 100vw;
     height: 100vh; }
 
 .redes p {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   font-size: 30px;
   font-family: 'Encode Sans', sans-serif;

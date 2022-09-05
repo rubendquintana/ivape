@@ -2,54 +2,56 @@
     width: 100vw;
     text-align: center;
     font-size: 30px;
-    font-family: 'Encode Sans', sans-serif;
+    font-family: $fu-pri;
     font-weight: bold;
     color: black;
     margin-top: 10%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    background-color: rgba(0,0,0,0.1);
-  }
+    margin-bottom: 0%;
+    padding-bottom: 0px;
+    padding-top: 10vw;
+}
+
 footer {
-    height: 22vw;
+    height: 150%;
     width: 100%;
-    padding-top: 5%;
+    padding-top: 0%;
     grid-area: footer;
     font-family: $fu-pri;
     font-weight: bold;
-    color: white;
-    display: flex;
     display: grid;
     grid-template-columns: 22vw 22vw 22vw 22vw;
     grid-template-rows: 22vw;
     justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
     text-align: center;
-    position: relative;
     background-color: $col-fondo;
+    margin-bottom: 0px;
   
-  
-        div img{
-        width: 80%;
-        height: 80%;
-        filter: contrast(82%);
-        text-align: center;
-    }
-
-  /* CAPA DE TRANSPARENCIA PARA FOOTER (GIFS CON FONDOS BLANCOS) */
-    .capa{
-        height: 100%;
+    div img{
         width: 100%;
-        position: absolute;
-        background-color: rgba(0,0,0,0.1  );
+        height: 100%;
+        filter: contrast(82%);
+        justify-items: center;
+        align-items: center;
     }
-    div p{
-        position: absolute;
-        text-align: center;
-        color: $col-sec;
-    }
-    /* CORRECCION TAMAÑO TWITCH */
+                /* CAPA DE TRANSPARENCIA PARA FOOTER (GIFS CON FONDOS BLANCOS) */
+        /* CORRECCION TAMAÑO TWITCH */
     .twitch img{
-        width: 70%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
     }
+    .final p {
+        width: 100vw;
+        color: black;
+        margin-bottom: 0px;
+        text-align: center;
+        justify-content:center;
+    }
+}
+footer .capa {
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.09  );
 }

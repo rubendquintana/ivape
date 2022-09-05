@@ -24,28 +24,24 @@
     ul a:hover {
       font-size: 21px;
     }
-    .marcas {
+    main .marcas {
       display: grid;
       width: 100%;
-      grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
-      grid-template-rows: 20vw 20vw;
-      justify-content:center;
-      gap: 2px;
-    }
-    .marcas .marca{
-      width: 100%;
-      height: 100%;
-    }
-    .marca img {
-      width: 80%;
-      height: 60%;
-      transition: height 0.3s, width 0.3s;
-      text-align: center;
-  
-    }
-    .marcas div:hover {
-      height: 120%;
-      width: 110%;
+      grid-template-columns: repeat(5, 15vw);
+      grid-template-rows: repeat(2, 15vw);
+      justify-items:center;
+      align-items: center;
+      gap: 20px;
+        
+      div {
+         width: 100%;
+        height: 100%;
+        transition: height 0.3s, width 0.3s;
+        }
+      div:hover {
+        height: 120%;
+        width: 120%;
+      }  
     }
     .navmain {
       display: grid;
@@ -60,4 +56,13 @@
       height: 99%;
       border: $borde2;
     }
-  }
+    footer{
+      height: 280px;
+      width: 100%;
+
+        .capa{
+          height: 300px;
+
+        }
+    }
+}

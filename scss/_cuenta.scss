@@ -38,21 +38,22 @@
         width: 100%;
         background: #e7f300;
         border: none;
-        padding: 12px;
+        padding: 10px;
         color: black;
-        margin: 16px 0;
+        margin: 50px 0 0;
         font-size: 16px;
+    }
+
+    .inputUno {
+        width: 100%;
+        background: #1d2528;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: $borde1;
+        font-family: $fu-sec;
+        font-size: 18px;
+        color: white;
     }
 }
 
-.inputUno {
-    width: 100%;
-    background: #1d2528;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: $borde1;
-    font-family: $fu-sec;
-    font-size: 18px;
-    color: white;
-}

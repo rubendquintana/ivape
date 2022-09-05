@@ -3,6 +3,7 @@ main {
     height: 100%;
     background-color: $col-fondo;
     grid-area: main;
+    display: grid;
     position: relative;
     
     main p{
@@ -50,7 +51,7 @@ main {
         font-weight: bolder;
         text-decoration: none;
         color: $col-sec;
-        padding: 5px;
+        padding: 0px;
         font-family: $fu-pri;
     }
     

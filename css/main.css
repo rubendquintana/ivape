@@ -43,6 +43,7 @@ main {
   height: 100%;
   background-color: white;
   grid-area: main;
+  display: grid;
   position: relative;
   /* ESTRUCTURA DE MARCAS */
   /* TAMAÑO CAJAS DE MARCAS */
@@ -82,7 +83,7 @@ main {
     font-weight: bolder;
     text-decoration: none;
     color: black;
-    padding: 5px;
+    padding: 0px;
     font-family: "Encode Sans", sans-serif; }
 
 h1 {
@@ -106,7 +107,7 @@ h2 {
   border-left: 1px grey solid;
   border-top: 1px grey solid;
   border-radius: 7px;
-  box-shadow: 9px 4px grey;
+  box-shadow: 5px 3px grey;
   align-items: center; }
 
 div p {
@@ -128,15 +129,18 @@ div p {
 .navmain {
   display: grid;
   grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
-  grid-template-rows: 30vw;
+  grid-template-rows: 28vw;
   justify-content: center;
   margin-top: 18%;
   gap: 5px; }
-
-.item img {
-  width: 99%;
-  height: 99%;
-  border: 1px black solid; }
+  .navmain .item {
+    margin-bottom: 0px; }
+  .navmain .item img {
+    width: 100%;
+    height: 100%;
+    border: 1px black solid;
+    justify-items: center;
+    align-items: center; }
 
 .pie-de-pag {
   display: grid;
@@ -144,61 +148,67 @@ div p {
   grid-template-rows: 22vw;
   justify-content: space-around;
   margin-top: 5%; }
-  .pie-de-pag figure img {
-    width: 99%;
-    height: 99%; }
-  .pie-de-pag .pie-de-pag figcaption {
-    text-align: center;
-    width: 100vw;
-    height: 100vh; }
+  .pie-de-pag figure {
+    margin-bottom: 10%; }
+    .pie-de-pag figure img {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: center; }
+    .pie-de-pag figure figcaption {
+      text-align: center; }
 
 .redes p {
   width: 100vw;
   text-align: center;
   font-size: 30px;
-  font-family: 'Encode Sans', sans-serif;
+  font-family: "Encode Sans", sans-serif;
   font-weight: bold;
   color: black;
   margin-top: 10%;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.1); }
+  margin-bottom: 0%;
+  padding-bottom: 0px;
+  padding-top: 10vw; }
 
 footer {
-  height: 22vw;
+  height: 150%;
   width: 100%;
-  padding-top: 5%;
+  padding-top: 0%;
   grid-area: footer;
   font-family: "Encode Sans", sans-serif;
   font-weight: bold;
-  color: white;
-  display: flex;
   display: grid;
   grid-template-columns: 22vw 22vw 22vw 22vw;
   grid-template-rows: 22vw;
   justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
   text-align: center;
-  position: relative;
   background-color: white;
+  margin-bottom: 0px;
   /* CAPA DE TRANSPARENCIA PARA FOOTER (GIFS CON FONDOS BLANCOS) */
   /* CORRECCION TAMAÑO TWITCH */ }
   footer div img {
-    width: 80%;
-    height: 80%;
-    filter: contrast(82%);
-    text-align: center; }
-  footer .capa {
-    height: 100%;
     width: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.1); }
-  footer div p {
-    position: absolute;
-    text-align: center;
-    color: black; }
+    height: 100%;
+    filter: contrast(82%);
+    justify-items: center;
+    align-items: center; }
   footer .twitch img {
-    width: 70%;
-    height: 70%; }
+    width: 50%;
+    height: 50%; }
+  footer .final p {
+    width: 100vw;
+    color: black;
+    margin-bottom: 0px;
+    text-align: center;
+    justify-content: center; }
+
+footer .capa {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.09); }
 
 .registro {
   width: 400px;
@@ -231,21 +241,20 @@ footer {
     width: 100%;
     background: #e7f300;
     border: none;
-    padding: 12px;
+    padding: 10px;
     color: black;
-    margin: 16px 0;
+    margin: 50px 0 0;
     font-size: 16px; }
-
-.inputUno {
-  width: 100%;
-  background: #1d2528;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px grey solid;
-  font-family: "Mukta", sans-serif;
-  font-size: 18px;
-  color: white; }
+  .registro .inputUno {
+    width: 100%;
+    background: #1d2528;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px grey solid;
+    font-family: "Mukta", sans-serif;
+    font-size: 18px;
+    color: white; }
 
 @media (max-width: 900px) {
   body {
@@ -262,24 +271,21 @@ footer {
     padding-right: 20px; }
   ul a:hover {
     font-size: 21px; }
-  .marcas {
+  main .marcas {
     display: grid;
     width: 100%;
-    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
-    grid-template-rows: 20vw 20vw;
-    justify-content: center;
-    gap: 2px; }
-  .marcas .marca {
-    width: 100%;
-    height: 100%; }
-  .marca img {
-    width: 80%;
-    height: 60%;
-    transition: height 0.3s, width 0.3s;
-    text-align: center; }
-  .marcas div:hover {
-    height: 120%;
-    width: 110%; }
+    grid-template-columns: repeat(5, 15vw);
+    grid-template-rows: repeat(2, 15vw);
+    justify-items: center;
+    align-items: center;
+    gap: 20px; }
+    main .marcas div {
+      width: 100%;
+      height: 100%;
+      transition: height 0.3s, width 0.3s; }
+    main .marcas div:hover {
+      height: 120%;
+      width: 120%; }
   .navmain {
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
@@ -290,7 +296,12 @@ footer {
   .item img {
     width: 99%;
     height: 99%;
-    border: 1px black solid; } }
+    border: 1px black solid; }
+  footer {
+    height: 280px;
+    width: 100%; }
+    footer .capa {
+      height: 300px; } }
 
 @media (max-width: 630px) {
   header {
@@ -313,7 +324,14 @@ footer {
     grid-template-rows: 30vw 30vw;
     justify-content: space-evenly;
     row-gap: 15%;
-    height: 500px; } }
+    height: 500px; }
+  .redes {
+    margin-top: 15vw; }
+  footer {
+    height: 200px;
+    width: 100%; }
+    footer .capa {
+      height: 200px; } }
 
 @media (max-width: 557px) {
   .marca a {
@@ -325,19 +343,22 @@ footer {
     padding-right: 20px; }
   ul a:hover {
     font-size: 14px; }
-  .marcas {
+  main .marcas {
     display: grid;
     width: 100%;
-    grid-template-columns: 20vw 20vw 20vw 20vw;
-    grid-template-rows: 25vw 25vw 25vw;
+    grid-template-columns: 17vw 17vw 17vw 17vw;
+    grid-template-rows: 17vw 17vw 17vw;
     justify-content: center;
-    gap: 8px; }
+    gap: 12px; }
   .diferente {
     grid-column-start: 2; }
+  .marcas img {
+    width: 20%;
+    height: 20%; }
   .pie-de-pag {
     margin-top: 10%; }
   .redes p {
-    margin-top: 25%; }
+    margin-top: 12vw; }
   .textomain p {
     font-size: 15px;
     margin-top: 3%; }
@@ -376,26 +397,33 @@ footer {
   .marcas {
     grid-template-columns: 25vw 25vw 25vw 25vw;
     grid-template-rows: 30vw 30vw 30vw; }
-  .redes p {
+  figure figcaption {
+    font-size: 12px; }
+  .redes {
+    margin-top: 2vw;
     font-size: 20px; }
   .tres {
     margin-top: 25%; }
   .registro {
     width: 300px; }
-  .registro p {
-    font-size: 12px; } }
+    .registro p {
+      font-size: 12px; } }
 
 @media (max-width: 365px) {
   nav {
     visibility: visible; }
   .tres {
     margin-top: 0%; }
+  main .textomain p {
+    font-size: 17px; }
   .navmain {
     margin-top: 25%; }
   header img {
     margin-left: 0%; }
   .redes {
     margin-top: 130px; }
+  main .pie-de-pag figure {
+    margin-bottom: 10%; }
   footer {
     width: 100vw;
     padding-right: 20%;

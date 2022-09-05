@@ -5,14 +5,19 @@
     grid-template-rows: 22vw;
     justify-content: space-around;
     margin-top: 5%;
-  
-    figure img {
-        width: 99%;
-        height: 99%;
+
+    figure{
+        margin-bottom: 10%;
+    
+        img {
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+        }
+
+        figcaption{
+            text-align:center;
+        }
     }
-    .pie-de-pag figcaption{
-        text-align: center;
-        width: 100vw;
-        height: 100vh;
-  }
 }

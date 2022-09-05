@@ -11,22 +11,26 @@
     ul a:hover {
       font-size: 14px;
     }
-    .marcas {
+    main .marcas {
       display: grid;
       width: 100%;
-      grid-template-columns: 20vw 20vw 20vw 20vw;
-      grid-template-rows: 25vw 25vw 25vw;
+      grid-template-columns: 17vw 17vw 17vw 17vw;
+      grid-template-rows: 17vw 17vw 17vw;
       justify-content:center;
-      gap: 8px;
+      gap: 12px;
     }
     .diferente{
       grid-column-start: 2;
+    }
+    .marcas img {
+      width: 20%;
+      height: 20%;
     }
     .pie-de-pag{
       margin-top: 10%;
     }
     .redes p{
-      margin-top: 25%;
+      margin-top: 12vw;
     }
     .textomain p{
       font-size: 15px;

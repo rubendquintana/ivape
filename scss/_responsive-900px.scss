@@ -1,68 +1,81 @@
 @media (max-width:900px) {
-    body{
-      display: grid;
-      grid-template-areas:
-      "header header header"
+  body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
       "main main main"
-      "main main main"
-      "main main main"
-      "main main main"
-      "main main main"
-      "footer footer footer";
-      position: relative;
-      width: 100vw;
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    position: relative;
+    width: 100vw;
+    height: 100%;
+  }  
+  header{
+    height: 100%;
+  } 
+  nav ul {
+    margin-top: 50px;
+    font-size: 20px;
+    padding-right: 20px;
+  }
+  ul a:hover {
+    font-size: 21px;
+  }
+  main .marcas {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 15vw);
+    grid-template-rows: repeat(2, 15vw);
+    justify-items:center;
+    align-items: center;
+    gap: 20px;
+      
+    div {
+       width: 100%;
       height: 100%;
+      transition: height 0.3s, width 0.3s;
+      }
+    div:hover {
+      height: 120%;
+      width: 120%;
     }  
-    header{
-      height: 100%;
-    } 
-    nav ul {
-      margin-top: 50px;
-      font-size: 20px;
-      padding-right: 20px;
+  }
+  .navmain {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 25vw 25vw;
+    justify-content: center;
+    margin-top: 20%;
+    gap: 10px;
+  }
+  .item img{
+    width: 99%;
+    height: 99%;
+    border: $borde2;
+  }
+  .redes {
+    padding-top: 20vh;
+  }
+  footer{
+    height: 330px;
+    width: 100%;
+    .capa{
+      height: 330px;
     }
-    ul a:hover {
-      font-size: 21px;
-    }
-    main .marcas {
-      display: grid;
-      width: 100%;
-      grid-template-columns: repeat(5, 15vw);
-      grid-template-rows: repeat(2, 15vw);
-      justify-items:center;
-      align-items: center;
-      gap: 20px;
-        
-      div {
-         width: 100%;
-        height: 100%;
-        transition: height 0.3s, width 0.3s;
-        }
-      div:hover {
-        height: 120%;
-        width: 120%;
-      }  
-    }
-    .navmain {
-      display: grid;
-      grid-template-columns: 25vw 25vw 25vw;
-      grid-template-rows: 25vw 25vw;
-      justify-content: center;
-      margin-top: 20%;
-      gap: 10px;
-    }
-    .item img{
-      width: 99%;
-      height: 99%;
-      border: $borde2;
-    }
-    footer{
-      height: 280px;
+    .footer {
+      height: 240px;
       width: 100%;
 
-        .capa{
-          height: 300px;
-
-        }
+      div img{
+        margin-top: 10vh;
+      }
     }
+    .final p{
+      height: 40px;
+      width: 100%;
+    }
+  }
 }

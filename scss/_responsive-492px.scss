@@ -1,50 +1,81 @@
 @media(max-width:492px) {
-    header img{
-      margin-left: 70%;
-      width: 100px;
-    }
-    nav ul {
-      margin-top: 15px;
-      font-size: 12px;
-      padding-right: 20px;
-    }
-    ul a:hover {
-      font-size: 14px;
-    }
-    .marcas{
-      gap: 1px;
-    }
-    .navmain {
-      display: grid;
-      grid-template-columns: 40vw 40vw;
-      grid-template-rows: 35vw 35vw 35vw;
-      margin-top: 35%;
-    }
-    .destacados {
-      display: grid;
-      grid-template-columns: 40vw 40vw;
-      grid-template-rows: 40vw 40vw;
-    }
-    .marcas{
-      grid-template-columns: 25vw 25vw 25vw 25vw;
-      grid-template-rows: 30vw 30vw 30vw;
-    }
-
-    figure figcaption{
-      font-size: 12px;
-    }
-    .redes {
-      margin-top: 2vw;
-      font-size: 20px;
+  body{
+    header{
+      img{
+        margin-left: 60%;
+        width: 100px;
       }
-    .tres{
-      margin-top: 25%;
+      nav ul {
+        margin-top: 15px;
+        font-size: 12px;
+        padding-right: 20px;
+      }
+      ul a:hover {
+        font-size: 14px;
+      }
     }
-    .registro {
-      width: 300px;
+    main{
+      .marcas{
+        gap: 1px;
+        width: 100vw;
 
-      p {
-      font-size: 12px;
+        .marca{
+          width: 80%;
+          height: 80%;
+        }
+      }
+      .navmain {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 35vw 35vw 35vw;
+        margin-top: 35%;
+      }
+      .destacados {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 40vw;
+      }
+      .marcas{
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-rows: 30vw 30vw 30vw;
+      }
+
+      figure figcaption{
+        font-size: 12px;
+      }
+      .redes {
+        margin-top: 2vw;
+        font-size: 20px;
+        
+        p{
+          font-size: 20px;
+        }
+      }
+      .tres{
+        margin-top: 25%;
+      }
+      .registro {
+        width: 300px;
+
+        p {
+        font-size: 12px;
+        }
+      }
+    }
+    footer{
+      height: 200px;
+
+      .footer{
+        height: 180px;
+      }
+      .capa{
+        height: 200px;
+      }
+
+      .final p{
+        margin-top: 0px;
+        font-size: 13px;
       }
     }
   }
+}

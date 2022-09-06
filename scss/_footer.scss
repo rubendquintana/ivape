@@ -1,57 +1,80 @@
+.redes{
+    width: 100%;
+    height: 20vh;
+    padding-top: 15%;
+}
 .redes p{
-    width: 100vw;
     text-align: center;
     font-size: 30px;
     font-family: $fu-pri;
     font-weight: bold;
     color: black;
-    margin-top: 10%;
     margin-bottom: 0%;
     padding-bottom: 0px;
-    padding-top: 10vw;
 }
 
-footer {
-    height: 150%;
+footer{
     width: 100%;
-    padding-top: 0%;
+    height: 400px;
     grid-area: footer;
-    font-family: $fu-pri;
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: 22vw 22vw 22vw 22vw;
-    grid-template-rows: 22vw;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    background-color: $col-fondo;
-    margin-bottom: 0px;
-  
-    div img{
+
+    .final{
         width: 100%;
-        height: 100%;
-        filter: contrast(82%);
-        justify-items: center;
-        align-items: center;
-    }
-                /* CAPA DE TRANSPARENCIA PARA FOOTER (GIFS CON FONDOS BLANCOS) */
-        /* CORRECCION TAMAÑO TWITCH */
-    .twitch img{
-        width: 50%;
-        height: 50%;
-    }
-    .final p {
-        width: 100vw;
+
+        p {
         color: black;
-        margin-bottom: 0px;
+        margin-top: 50px;
         text-align: center;
         justify-content:center;
+        }
     }
-}
-footer .capa {
-    height: 90%;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0,0.09  );
+        /* CAPA DE TRANSPARENCIA PARA FOOTER (GIFS CON FONDOS BLANCOS) */
+    .capa {
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,0.09  );
+    }
+
+    .footer {
+        height: 300px;
+        width: 90%;
+        padding-top: 0%;
+        font-family: $fu-pri;
+        font-weight: bold;
+        display: grid;
+        grid-template-areas: 
+        "ig fb tw tc"
+        "cr cr cr cr";
+        // grid-template-columns: 22vw 22vw 22vw 22vw;
+        // grid-template-rows: 22vw;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        background-color: $col-fondo;
+        margin-bottom: 0px;
+    
+        div img{
+            width: 80%;
+            height: 80%;
+            filter: contrast(82%);
+            justify-items: center;
+            align-items: center;
+            margin-top: 20vh;
+        }
+        .ig{
+            grid-area: "ig";
+        }
+        .fb{grid-area: "fb";
+        }
+        .tw{grid-area: "tw";
+            img{
+                width: 50%;
+                height: 50%;
+            }
+        }
+        .twitch{grid-area: "tc";
+        }
+    }
 }

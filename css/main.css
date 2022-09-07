@@ -437,6 +437,13 @@ footer {
     body main .marcas .marca {
       width: 80%;
       height: 80%; }
+    body main .marcas div {
+      width: 80%;
+      height: 80%;
+      transition: height 0.3s, width 0.3s; }
+    body main .marcas div:hover {
+      height: 100%;
+      width: 100%; }
   body main .navmain {
     display: grid;
     grid-template-columns: 40vw 40vw;

@@ -1,0 +1,44 @@
+.hardware {
+  width: 100vw;
+  height: 100%;
+
+  .grid-conten-hard {
+    width: 100vw;
+    height: 140%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    gap: 12% 2%;
+    background-color: black;
+    padding-top: 6%;
+    border-top: $borde3;
+    padding-bottom: 10%;
+    margin-bottom: 5%;
+
+    .item{
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: center;
+    }
+    figcaption{
+        color: white;
+        text-align: center;
+        font-size: 100%;
+    }
+  }
+  .redes {
+    width: 100%;
+    height: 80%;
+    margin-top: 30%;
+  }
+}

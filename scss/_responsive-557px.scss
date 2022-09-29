@@ -89,4 +89,16 @@
       font-size: 15px;
     }
   }
+  .hardware{
+    .mainhardware{
+      h1{
+        font-size: 20px;
+        padding-bottom: 2%;
+      }
+      .grid-conten-hard{
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 40vw 40vw 40vw 40vw 40vw 40vw 40vw;
+      }
+    }
+  }
 }

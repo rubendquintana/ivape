@@ -5,7 +5,7 @@
     "header header header"
     "main main main"
     "main main main"
-      "main main main"
+    "main main main"
     "main main main"
     "main main main"
     "footer footer footer";
@@ -76,6 +76,13 @@
     .final p{
       height: 40px;
       width: 100%;
+    }
+  }
+  .hardware{
+    .mainhardware{
+      h1{
+        font-size: 20px;
+      }
     }
   }
 }

@@ -87,4 +87,27 @@
       }
     }
   }
+  .hardware{
+    h1{
+      font-size: 16px;
+    }
+    .grid-conten-hard {
+      padding-top: 4%;
+      height: 100%;
+      border-bottom: $borde3;
+      margin-bottom: 15%;
+
+      figcaption{
+        font-size: 12px;
+      }
+       
+      .rabbit{
+        grid-column-start: 2;
+      }
+    }
+    .redes {
+      height: 30%;
+      margin-top: 5%;
+    }
+  }
 }

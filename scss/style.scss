@@ -6,7 +6,7 @@
 
 @import "maps";
  
-body {
+.estructura {
   display: grid;
   grid-template-areas:
     "header header header header"
@@ -36,7 +36,15 @@ body {
 
 @import "cuenta";
 
+@import "Productos";
+
+@import "liquidos";
+
+@import "sales";
+
 @import "responsive-900px";
+
+@import "responsive-780px";
 
 @import "responsive-630px";
 

@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0; }
 
-body {
+.estructura {
   display: grid;
   grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main" "footer footer footer footer";
   position: relative;
@@ -26,17 +26,19 @@ header {
   width: 100%;
   background-color: black;
   grid-area: header; }
-  header ul a {
-    font-weight: bolder;
-    text-decoration: none;
-    color: white;
-    padding-left: 15px;
-    font-family: "Encode Sans", sans-serif;
-    transition: height 0.4s, width 0.3s; }
-  header ul a:hover {
-    border-bottom: 3px black solid;
-    height: -20px;
-    font-size: 21px; }
+  header nav {
+    border-top: 2px solid #efef17; }
+    header nav ul a {
+      font-weight: bolder;
+      text-decoration: none;
+      color: white;
+      padding-left: 15px;
+      font-family: "Encode Sans", sans-serif;
+      transition: height 0.4s, width 0.3s; }
+    header nav ul a:hover {
+      border-bottom: 3px black solid;
+      height: -20px;
+      font-size: 21px; }
 
 main {
   width: 100vw;
@@ -128,8 +130,8 @@ div p {
 
 .navmain {
   display: grid;
-  grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
-  grid-template-rows: 28vw;
+  grid-template-columns: 16vw 16vw 16vw 16vw 16vw 16vw;
+  grid-template-rows: 20vw;
   justify-content: center;
   margin-top: 18%;
   gap: 5px; }
@@ -191,7 +193,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.09); }
   footer .footer {
     height: 300px;
-    width: 90%;
+    width: 100%;
     padding-top: 0%;
     font-family: "Encode Sans", sans-serif;
     font-weight: bold;
@@ -202,7 +204,8 @@ footer {
     align-items: center;
     text-align: center;
     background-color: white;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    margin-right: 0%; }
     footer .footer div img {
       width: 80%;
       height: 80%;
@@ -217,10 +220,13 @@ footer {
     footer .footer .tw {
       grid-area: "tw"; }
       footer .footer .tw img {
-        width: 50%;
-        height: 50%; }
+        width: 70%;
+        height: 70%; }
     footer .footer .twitch {
       grid-area: "tc"; }
+      footer .footer .twitch img {
+        width: 40%;
+        height: 40%; }
 
 .registro {
   width: 400px;
@@ -267,6 +273,114 @@ footer {
     font-family: "Mukta", sans-serif;
     font-size: 18px;
     color: white; }
+
+.hardware {
+  width: 100vw;
+  height: 100%; }
+  .hardware .grid-conten-hard {
+    width: 100vw;
+    height: 140%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    gap: 12% 2%;
+    background-color: black;
+    padding-top: 6%;
+    border-top: 2px solid #efef17;
+    padding-bottom: 10%;
+    margin-bottom: 5%; }
+    .hardware .grid-conten-hard .item {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: center; }
+    .hardware .grid-conten-hard img {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: center; }
+    .hardware .grid-conten-hard figcaption {
+      color: white;
+      text-align: center;
+      font-size: 100%; }
+  .hardware .redes {
+    width: 100%;
+    height: 80%;
+    margin-top: 30%; }
+
+.hardware {
+  width: 100vw;
+  height: 100%; }
+  .hardware .grid-conten-hard {
+    width: 100vw;
+    height: 140%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    gap: 12% 2%;
+    background-color: black;
+    padding-top: 6%;
+    border-top: 2px solid #efef17;
+    padding-bottom: 10%;
+    margin-bottom: 5%; }
+    .hardware .grid-conten-hard .item {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: center; }
+    .hardware .grid-conten-hard img {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: center; }
+    .hardware .grid-conten-hard figcaption {
+      color: white;
+      text-align: center;
+      font-size: 100%; }
+  .hardware .redes {
+    width: 100%;
+    height: 80%;
+    margin-top: 30%; }
+
+.hardware {
+  width: 100vw;
+  height: 100%; }
+  .hardware .grid-conten-hard {
+    width: 100vw;
+    height: 140%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    gap: 12% 2%;
+    background-color: black;
+    padding-top: 6%;
+    border-top: 2px solid #efef17;
+    padding-bottom: 10%;
+    margin-bottom: 5%; }
+    .hardware .grid-conten-hard .item {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: center; }
+    .hardware .grid-conten-hard img {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: center; }
+    .hardware .grid-conten-hard figcaption {
+      color: white;
+      text-align: center;
+      font-size: 100%; }
+  .hardware .redes {
+    width: 100%;
+    height: 80%;
+    margin-top: 30%; }
 
 @media (max-width: 900px) {
   body {
@@ -323,7 +437,26 @@ footer {
         margin-top: 10vh; }
     footer .final p {
       height: 40px;
-      width: 100%; } }
+      width: 100%; }
+  .hardware .mainhardware h1 {
+    font-size: 20px; } }
+
+@media (max-width: 780px) {
+  .hardware h1 {
+    font-size: 23px; }
+  .hardware .grid-conten-hard {
+    height: 100%;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw;
+    gap: 20vh 2%;
+    padding-bottom: 10%;
+    border-bottom: 2px solid #efef17; }
+    .hardware .grid-conten-hard .rabbit {
+      grid-column-start: 2; }
+  .hardware .redes {
+    height: 30%;
+    padding-top: 2%;
+    margin-top: 0%; } }
 
 @media (max-width: 630px) {
   header {
@@ -419,7 +552,13 @@ footer {
       width: 100%;
       height: 100%; }
     footer .final p {
-      font-size: 15px; } }
+      font-size: 15px; }
+  .hardware .mainhardware h1 {
+    font-size: 20px;
+    padding-bottom: 2%; }
+  .hardware .mainhardware .grid-conten-hard {
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 40vw 40vw 40vw 40vw 40vw 40vw 40vw 40vw; } }
 
 @media (max-width: 492px) {
   body header img {
@@ -477,7 +616,21 @@ footer {
       height: 200px; }
     body footer .final p {
       margin-top: 0px;
-      font-size: 13px; } }
+      font-size: 13px; }
+  .hardware h1 {
+    font-size: 16px; }
+  .hardware .grid-conten-hard {
+    padding-top: 4%;
+    height: 100%;
+    border-bottom: 2px solid #efef17;
+    margin-bottom: 15%; }
+    .hardware .grid-conten-hard figcaption {
+      font-size: 12px; }
+    .hardware .grid-conten-hard .rabbit {
+      grid-column-start: 2; }
+  .hardware .redes {
+    height: 30%;
+    margin-top: 5%; } }
 
 @media (max-width: 365px) {
   nav {

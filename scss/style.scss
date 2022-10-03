@@ -3,8 +3,6 @@
     padding: 0;
   }
 @import "variables";
-
-@import "maps";
  
 .estructura {
   display: grid;
@@ -41,6 +39,8 @@
 @import "liquidos";
 
 @import "sales";
+
+@import "articulos";
 
 @import "responsive-900px";
 

@@ -382,6 +382,31 @@ footer {
     height: 80%;
     margin-top: 30%; }
 
+.mainarticulos {
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  position: relative;
+  grid-template-areas: "titulo" "imagen" "descripcion"; }
+  .mainarticulos h1 {
+    grid-area: "titulo";
+    padding-top: 1%; }
+  .mainarticulos .imgpri {
+    grid-area: "imagen";
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+    box-shadow: 5px 3px grey;
+    border: 1px black solid; }
+    .mainarticulos .imgpri img {
+      width: 100%;
+      height: 100%; }
+  .mainarticulos h3 {
+    grid-area: "descripcion";
+    text-align: center;
+    margin-top: 50%; }
+
 @media (max-width: 900px) {
   body {
     display: grid;

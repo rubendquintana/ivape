@@ -113,7 +113,6 @@ h2 {
   align-items: center; }
 
 div p {
-  font-family: "Encode Sans", sans-serif;
   font-family: "Mukta", sans-serif;
   font-size: 20px;
   text-align: center; }
@@ -406,6 +405,14 @@ footer {
     grid-area: "descripcion";
     text-align: center;
     margin-top: 50%; }
+  .mainarticulos .estilo {
+    padding-left: 1%;
+    padding-right: 1%; }
+    .mainarticulos .estilo li {
+      font-family: "Mukta", sans-serif;
+      font-size: 20px;
+      text-align: center;
+      list-style-type: none; }
 
 @media (max-width: 900px) {
   body {

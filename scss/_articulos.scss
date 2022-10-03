@@ -31,4 +31,16 @@
     text-align: center;
     margin-top: 50%;
   }
+  .estilo {
+    padding-left: 1%;
+    padding-right: 1%;  
+  
+    li{
+    font-family: $fu-sec;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+    }
+    
+  }
 }
